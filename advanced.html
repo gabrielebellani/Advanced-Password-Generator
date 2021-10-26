@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Password Generator - Advanced Mode</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="advanced.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div id="containerBackground" class="container-fluid">
+    <h1 class="title">ADVANCED P******D GENERATOR</h1>
+    <h2 class="subtitle">The most secure and <span style="color: darkorange">NO</span> database Advanced Password Generator</h2>
+    <input class="passwordIOField form-control" id="passwordOutput" type="text" value="Press on Generate for get a password" aria-label="readonly input example" readonly>
+    <label for="customRange" class="form-label inputLabel">The password will be letters and numbers.<br>Choose a password length.<br><br>Now set to</label><output id="lengthBox" name="lengthBox" for="customRange">16</output>
+    <div id="customRangeBox">
+        <span>4</span><input oninput="lengthBox.value=customRange.value" type="range" id="customRange" name="customRange" class="form-range sliderInput" value="16" min="4" max="128" ><span>128</span>
+    </div>
+    <fieldset id="customParameters">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="letters" checked disabled>
+            <label class="form-check-label" for="inlineCheckbox1">Letters</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="numbers">
+            <label class="form-check-label" for="inlineCheckbox2">Numbers</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="capitalLetters">
+            <label class="form-check-label" for="inlineCheckbox3">Capital letters</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="symbols">
+            <label class="form-check-label" for="inlineCheckbox4">Symbols</label>
+        </div>
+    </fieldset>
+
+    <button type="submit" onclick="generateAdvancedPassword(customRange.value)" class="btn submitButton">Generate</button>
+    <a href="index.html" style="width: 100%"><button class="btn submitButton advancedButton">Basic</button></a>
+</div>
+</body>

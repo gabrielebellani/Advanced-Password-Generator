@@ -1,0 +1,110 @@
+body {
+  background-color: rgba(228, 228, 228, 0.29);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+#containerBackground {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: lighter;
+  margin: 10px 0 20px 0;
+}
+
+.subtitle {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+}
+
+.passwordIOField {
+  width: 500px;
+  height: 50px;
+  font-family: Poppins;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50px;
+  border: 2px solid #707070;
+  margin: 50px 0 50px 0;
+}
+
+.passwordIOField:focus-visible {
+  border-color: #007AFF;
+}
+
+.submitButton {
+  font-family: Poppins;
+  font-size: 20px;
+  width: 50%;
+  padding: 10px 40px;
+  background-color: #007AFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 0 0 20px 0;
+}
+
+.sliderInput {
+  width: 80%;
+  margin: 0 10px;
+}
+
+#customRangeBox, #customParameters {
+  display: inline;
+  width: 70%;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 20px 0 30px 0;
+}
+
+.inputLabel {
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+#lengthBox {
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: normal;
+  color: darkorange;
+  border: 0.5px solid rgba(164, 164, 164, 0.55);
+  width: 10%;
+  border-radius: 8px;
+}
+
+.advancedButton {
+  width: 40%;
+  background-color: white;
+  color: #007AFF;
+}
+
+#customParameters {
+  margin-bottom: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: none;
+}
+
+.form-check {
+  margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
